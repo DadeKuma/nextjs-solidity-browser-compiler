@@ -2,6 +2,7 @@
 
 # nextjs-solidity-browser-compiler
 
+![Preview](/solidity-browser-compiler.gif)
 A solidity frontend compiler example built with Next.js and solc-js
 
 [Live Preview](https://nextjs-solidity-browser-compiler.vercel.app/)
