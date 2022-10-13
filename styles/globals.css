@@ -11,6 +11,12 @@ a {
   text-decoration: none;
 }
 
+button {
+  background-color: black;
+  color: white;
+  padding: 20px 40px;
+}
+
 * {
   box-sizing: border-box;
 }

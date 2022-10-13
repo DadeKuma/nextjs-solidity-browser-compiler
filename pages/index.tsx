@@ -1,7 +1,6 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import type { NextPage } from 'next';
+import Head from 'next/head';
+import styles from '../styles/Home.module.css';
 
 const Home: NextPage = () => {
   return (
@@ -17,24 +16,26 @@ const Home: NextPage = () => {
           Frontend Solidity Compiler
         </h1>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.tsx</code>
-        </p>
-
         <div className={styles.grid}>
           <div className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
+            <h2>Source Code</h2>
+            <textarea rows={30} cols={40}>
+
+            </textarea>
+            <div className={styles.buttonWrapper}>
+              <button>Compile</button>
+            </div>
           </div>
           <div className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
+            <h2>Compiled ByteCode</h2>
+            <textarea readOnly rows={30} cols={40}>
+
+            </textarea>
           </div>
         </div>
       </main>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
