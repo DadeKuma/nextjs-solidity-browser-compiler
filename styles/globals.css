@@ -11,6 +11,10 @@ a {
   text-decoration: none;
 }
 
+textarea {
+  resize: vertical;
+}
+
 button {
   background-color: black;
   color: white;
