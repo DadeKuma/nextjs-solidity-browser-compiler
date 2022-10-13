@@ -28,6 +28,10 @@ export const compile = (contractCode: string): Promise<ContractData[]> => {
         worker.onmessage = function (e: any) {
             const output = e.data.output;
             const result = [];
+            if (!output.contracts) {
+                reject("Invalid source code");
+                return;
+            }
             for (const contractName in output.contracts['contract']) {
                 const contract = output.contracts['contract'][contractName];
                 result.push({

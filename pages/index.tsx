@@ -18,7 +18,10 @@ const Home: NextPage = () => {
         setByteCode(() => data.byteCode);
         setAbi(() => JSON.stringify(data.abi));
       })
-      .catch(console.error)
+      .catch(err => {
+        alert(err);
+        console.error(err);
+      })
       .finally(() => {
         button.disabled = false;
       });
